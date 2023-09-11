@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 01</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <ul class="header-list">
+        <li class="header-list-item">
+          <a class="header-list-item-link" href="#">Trang chủ</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-item-link" href="#">Giới thiệu</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-item-link" href="#">Bài viết</a>
+        </li>
+        <li class="header-list-item">
+          <a class="header-list-item-link" href="#">Liên lạc</a>
+        </li>
+      </ul>
+      <form class="search-form">
+        <input class="input-search-form" placeholder="Tìm kiếm..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+    </header>
+    <main>
+      <h2>Ví dụ thao tác JavaScript với HTML, CSS</h2>
+      <p>Nội dung đang cập nhật...</p>
+      <button onclick="openLoginForm()">Đăng nhập</button>
+    </main>
+    <div id="modal" class="modal">
+      <div class="modal-overlay"></div>
+
+      <div class="modal-body">
+        <div class="form-login">
+          <div class="header-login-form">
+            <img
+              src="https://www.w3schools.com/w3images/avatar2.png"
+              alt="Avatar"
+              width="250"
+            />
+          </div>
+          <div class="login-form">
+            <form>
+              <label class="username-label" for="username">Tài khoản</label>
+              <br />
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="Nhập tài khoản"
+              />
+              <br />
+              <label class="password-label" for="password">Mật khẩu</label>
+              <br />
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Nhập mật khẩu"
+              />
+              <br />
+              <div class="login-feature">
+                <button onclick="loginSuccessful()">Đăng nhập</button>
+                <input
+                  type="checkbox"
+                  name="accountRemember"
+                  id="accountRemember"
+                />
+                <label for="accountRemember">Nhớ mật khẩu</label>
+              </div>
+              <div class="login-form-footer">
+                <button class="cancel-btn" onclick="closeLoginForm()">
+                  Hủy bỏ
+                </button>
+                <a class="forgot-password" href="#">Quên mật khẩu?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

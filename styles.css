@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+}
+
+.header-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+}
+
+.header-list > .header-list-item {
+  padding: 15px;
+}
+
+.header-list > .header-list-item:first-child {
+  background-color: green;
+}
+
+.header-list > .header-list-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.input-search-form {
+  height: 20px;
+  margin-right: 5px;
+}
+
+i {
+  margin-right: 5px;
+  color: white;
+}
+
+main {
+  margin-left: 15px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  animation: fadeIn linear 0.3s;
+}
+
+.modal-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-body {
+  --growth-from: 0.7;
+  --growth-to: 1;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  animation: growth linear 0.3s;
+}
+
+.form-login {
+  width: 550px;
+  height: 550px;
+  background-color: white;
+}
+
+.header-login-form {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.header-login-form > img {
+  border-radius: 50%;
+}
+
+.login-form {
+  background-color: #f1f1f1;
+  padding-left: 15px;
+}
+
+.username-label,
+.password-label {
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5em;
+}
+
+#username,
+#password {
+  width: 95%;
+  height: 30px;
+  border: 1px solid #b6b6b6d5;
+  outline: none;
+}
+
+.login-feature {
+  margin-top: 10px;
+}
+
+.login-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.cancel-btn {
+  width: 70px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: none;
+  margin-bottom: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.forgot-password {
+  margin-right: 30px;
+}
