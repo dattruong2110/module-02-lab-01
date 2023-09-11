@@ -6,17 +6,13 @@ var passwordInput = document.getElementsByName("password")[0];
 headerListItems.forEach((headerListItem) => {
   var headerListItemLink = headerListItem.children[0];
 
-  // Mouseover event handler
   headerListItem.addEventListener("mouseover", () => {
-    // Add your hover effect here (e.g., change background color)
     headerListItem.style.backgroundColor = "#F2F2F2";
     headerListItem.style.borderBottom = "1px solid red";
     headerListItemLink.style.color = "black";
   });
 
-  // Mouseout event handler
   headerListItem.addEventListener("mouseout", () => {
-    // Remove the hover effect here (e.g., revert to the original background color)
     headerListItem.style.backgroundColor = "";
     headerListItem.style.borderBottom = "";
     headerListItemLink.style.color = "";
