@@ -1,15 +1,17 @@
 var headerListItems = document.querySelectorAll(".header-list-item");
-var headerListItemsLink = document.querySelectorAll(".header-list-item-link");
 var modal = document.getElementById("modal");
 var usernameInput = document.getElementsByName("username")[0];
 var passwordInput = document.getElementsByName("password")[0];
 
 headerListItems.forEach((headerListItem) => {
+  var headerListItemLink = headerListItem.children[0];
+
   // Mouseover event handler
   headerListItem.addEventListener("mouseover", () => {
     // Add your hover effect here (e.g., change background color)
     headerListItem.style.backgroundColor = "#F2F2F2";
     headerListItem.style.borderBottom = "1px solid red";
+    headerListItemLink.style.color = "black";
   });
 
   // Mouseout event handler
@@ -17,17 +19,8 @@ headerListItems.forEach((headerListItem) => {
     // Remove the hover effect here (e.g., revert to the original background color)
     headerListItem.style.backgroundColor = "";
     headerListItem.style.borderBottom = "";
+    headerListItemLink.style.color = "";
   });
-
-  // headerListItemsLink.forEach((headerListItemLink) => {
-  //   headerListItemLink.addEventListener("mouseover", () => {
-  //     headerListItemLink.style.color = "black";
-  //   });
-
-  //   headerListItemLink.addEventListener("mouseout", () => {
-  //     headerListItemLink.style.color = "";
-  //   });
-  // });
 });
 
 const openLoginForm = () => {
